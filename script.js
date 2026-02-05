@@ -1,3 +1,5 @@
+alert("JS chargé !");
+
 let current = null;
 let solved = new Array(enigmes.length).fill(false);
 

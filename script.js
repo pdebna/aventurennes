@@ -1,20 +1,62 @@
-let current = 0;
-let solved = [];
+let current = null;
+let solved = new Array(enigmes.length).fill(false);
 
-const nextBtn = document.getElementById("nextBtn");
+initMenu();
 
-function loadEnigme() {
-  const e = enigmes[current];
+/* ======================
+   MENU
+====================== */
+
+function initMenu() {
+
+  const menu = document.getElementById("menu");
+  menu.innerHTML = "";
+
+  enigmes.forEach((e, index) => {
+
+    const btn = document.createElement("button");
+
+    btn.innerText = "Énigme " + (index + 1);
+
+    btn.onclick = () => loadEnigme(index);
+
+    btn.className = solved[index]
+      ? "solved"
+      : "unsolved";
+
+    menu.appendChild(btn);
+
+  });
+
+}
+
+
+/* ======================
+   JEU
+====================== */
+
+function loadEnigme(index) {
+
+  current = index;
+
+  const e = enigmes[index];
+
+  document.getElementById("game").style.display = "block";
 
   document.getElementById("progress").innerText =
-    `Énigme ${current + 1} / ${enigmes.length}`;
+    `Énigme ${index + 1} / ${enigmes.length}`;
 
-  document.getElementById("question").innerText = e.question;
+  document.getElementById("question").innerText =
+    e.question;
+
   document.getElementById("answer").value = "";
   document.getElementById("feedback").innerText = "";
-
-  nextBtn.style.display = "none";
 }
+
+
+/* ======================
+   VALIDATION
+====================== */
 
 function normalize(str) {
   return str
@@ -25,6 +67,9 @@ function normalize(str) {
 }
 
 function submitAnswer() {
+
+  if (current === null) return;
+
   const input = normalize(
     document.getElementById("answer").value
   );
@@ -36,19 +81,33 @@ function submitAnswer() {
     .includes(input);
 
   if (valid) {
-    solved.push(e);
+
+    solved[current] = true;
+
     showStops(e);
-    nextBtn.style.display = "block";
+
+    initMenu();
+
+    checkFinish();
+
   } else {
+
     document.getElementById("feedback").innerText =
       "Pas encore… regarde bien 👀";
+
   }
 }
 
+
+/* ======================
+   AFFICHAGE
+====================== */
+
 function showStops(e) {
+
   let html =
     `<h3>Lettre ${e.letter}</h3>
-     <p>Trace les arrêts suivants :</p>
+     <p>Trace :</p>
      <ul>`;
 
   e.stops.forEach(s => {
@@ -60,24 +119,24 @@ function showStops(e) {
   document.getElementById("feedback").innerHTML = html;
 }
 
-function next() {
-  current++;
 
-  if (current < enigmes.length) {
-    loadEnigme();
-  } else {
-    showFinal();
+/* ======================
+   FIN
+====================== */
+
+function checkFinish() {
+
+  if (solved.every(v => v)) {
+
+    document.getElementById("final").style.display = "block";
+
+    const phrase = enigmes
+      .map(e => e.letter)
+      .join("");
+
+    document.getElementById("result").innerText =
+      phrase;
   }
+
 }
 
-function showFinal() {
-  document.getElementById("game").style.display = "none";
-  document.getElementById("final").style.display = "block";
-
-  const phrase = solved.map(e => e.letter).join("");
-
-  document.getElementById("result").innerText =
-    phrase;
-}
-
-loadEnigme();

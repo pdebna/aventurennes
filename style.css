@@ -40,3 +40,18 @@ button:hover, .btn:hover {
 #feedback {
   margin-top: 15px;
 }
+#menu {
+  margin-bottom: 20px;
+}
+
+#menu button {
+  margin: 5px;
+}
+
+.solved {
+  background: #4CAF50;
+}
+
+.unsolved {
+  background: #2c5cff;
+}

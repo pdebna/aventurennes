@@ -61,3 +61,21 @@ button:hover, .btn:hover {
 .unsolved {
   background: #2c5cff;
 }
+
+ul.stops {
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+#feedback {
+  text-align: center;
+}
+
+.intro {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+}
+

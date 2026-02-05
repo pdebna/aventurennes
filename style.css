@@ -84,3 +84,11 @@ ul.stops {
   color: #555;
 }
 
+#menu {
+  min-height: 200px;
+}
+
+#menu button {
+  display: block;
+  min-height: 40px;
+}

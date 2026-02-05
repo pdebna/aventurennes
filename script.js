@@ -1,142 +1,46 @@
-let current = null;
-let solved = new Array(enigmes.length).fill(false);
+// Charger les énigmes depuis le fichier JSON
+let enigmes = [];
 
-initMenu();
-
-/* ======================
-   MENU
-====================== */
-
-function initMenu() {
-
-  const menu = document.getElementById("menu");
-  menu.innerHTML = "";
-
-  enigmes.forEach((e, index) => {
-
-    const btn = document.createElement("button");
-
-    btn.innerText = "Énigme " + (index + 1);
-
-    btn.onclick = () => loadEnigme(index);
-
-    btn.className = solved[index]
-      ? "solved"
-      : "unsolved";
-
-    menu.appendChild(btn);
-
+fetch('data/enigmes.json')
+  .then(response => response.json())
+  .then(data => {
+    enigmes = data.enigmes;
+    afficherListeEnigmes();
   });
 
+// Afficher la liste des énigmes
+function afficherListeEnigmes() {
+  const container = document.getElementById('liste-enigmes');
+  enigmes.forEach(enigme => {
+    const bouton = document.createElement('button');
+    bouton.textContent = `Énigme ${enigme.id}`;
+    bouton.onclick = () => afficherEnigme(enigme.id);
+    container.appendChild(bouton);
+  });
 }
 
-
-/* ======================
-   JEU
-====================== */
-
-function loadEnigme(index) {
-
-  current = index;
-
-  const e = enigmes[index];
-
-  document.getElementById("game").style.display = "block";
-
-  document.getElementById("progress").innerText =
-    `Énigme ${index + 1} / ${enigmes.length}`;
-
-  document.getElementById("question").innerText =
-    e.question;
-
-  document.getElementById("answer").value = "";
-  document.getElementById("feedback").innerText = "";
+// Afficher une énigme spécifique
+function afficherEnigme(id) {
+  const enigme = enigmes.find(e => e.id === id);
+  document.getElementById('enigme-question').textContent = enigme.question;
+  document.getElementById('enigme-container').style.display = 'block';
+  document.getElementById('valider').onclick = () => verifierReponse(enigme);
 }
 
+// Vérifier la réponse
+function verifierReponse(enigme) {
+  const reponseUser = document.getElementById('reponse-utilisateur').value;
+  const resultatDiv = document.getElementById('resultat');
 
-/* ======================
-   VALIDATION
-====================== */
-
-function normalize(str) {
-  return str
-    .toLowerCase()
-    .trim()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
-
-function submitAnswer() {
-
-  if (current === null) return;
-
-  const input = normalize(
-    document.getElementById("answer").value
-  );
-
-  const e = enigmes[current];
-
-  const valid = e.answers
-    .map(a => normalize(a))
-    .includes(input);
-
-  if (valid) {
-
-    solved[current] = true;
-
-    showStops(e);
-
-    initMenu();
-
-    checkFinish();
-
+  if (reponseUser.toLowerCase() === enigme.reponse.toLowerCase()) {
+    resultatDiv.innerHTML = `
+      <p>${enigme.commentaire}</p>
+      <h3>Arrêts STAR à relier :</h3>
+      <ul>
+        ${enigme.arrets.map(arret => `<li>${arret.nom} (Ligne ${arret.ligne})</li>`).join('')}
+      </ul>
+    `;
   } else {
-
-    document.getElementById("feedback").innerText =
-      "Pas encore… regarde bien 👀";
-
+    resultatDiv.innerHTML = "<p>Dommage, ce n'est pas la bonne réponse. Réessaye !</p>";
   }
 }
-
-
-/* ======================
-   AFFICHAGE
-====================== */
-
-function showStops(e) {
-
-  let html = "<ul>";
-
-  e.stops.forEach(s => {
-    html += `<li>${s}</li>`;
-  });
-
-  html += "</ul>";
-
-  if(e.message && e.message !== "") {
-    html += `<p><em>${e.message}</em></p>`;
-  }
-
-  document.getElementById("feedback").innerHTML = html;
-}
-
-/* ======================
-   FIN
-====================== */
-
-function checkFinish() {
-
-  if (solved.every(v => v)) {
-
-    document.getElementById("final").style.display = "block";
-
-    const phrase = enigmes
-      .map(e => e.letter)
-      .join("");
-
-    document.getElementById("result").innerText =
-      phrase;
-  }
-
-}
-

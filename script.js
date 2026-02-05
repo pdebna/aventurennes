@@ -1,7 +1,15 @@
+/* ======================
+   VARIABLES
+====================== */
+
 let current = null;
 let solved = [];
 
-// Attendre que tout soit chargé
+
+/* ======================
+   INITIALISATION
+====================== */
+
 window.onload = function () {
 
   solved = new Array(enigmes.length).fill(false);
@@ -9,6 +17,7 @@ window.onload = function () {
   initMenu();
 
 };
+
 
 /* ======================
    MENU
@@ -25,7 +34,9 @@ function initMenu() {
 
     btn.innerText = "Énigme " + (index + 1);
 
-    btn.onclick = () => loadEnigme(index);
+    btn.onclick = function () {
+      loadEnigme(index);
+    };
 
     btn.className = solved[index]
       ? "solved"
@@ -51,27 +62,34 @@ function loadEnigme(index) {
   document.getElementById("game").style.display = "block";
 
   document.getElementById("progress").innerText =
-    `Énigme ${index + 1} ;
+    "Énigme " + (index + 1);
 
   document.getElementById("question").innerText =
     e.question;
 
   document.getElementById("answer").value = "";
-  document.getElementById("feedback").innerText = "";
+  document.getElementById("feedback").innerHTML = "";
+}
+
+
+/* ======================
+   NORMALISATION
+====================== */
+
+function normalize(str) {
+
+  return str
+    .toLowerCase()
+    .trim()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
 }
 
 
 /* ======================
    VALIDATION
 ====================== */
-
-function normalize(str) {
-  return str
-    .toLowerCase()
-    .trim()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
 
 function submitAnswer() {
 
@@ -84,7 +102,9 @@ function submitAnswer() {
   const e = enigmes[current];
 
   const valid = e.answers
-    .map(a => normalize(a))
+    .map(function (a) {
+      return normalize(a);
+    })
     .includes(input);
 
   if (valid) {
@@ -92,6 +112,8 @@ function submitAnswer() {
     solved[current] = true;
 
     showStops(e);
+
+    initMenu();
 
     checkFinish();
 
@@ -101,11 +123,12 @@ function submitAnswer() {
       "Pas encore… regarde bien 👀";
 
   }
+
 }
 
 
 /* ======================
-   AFFICHAGE
+   AFFICHAGE RESULTAT
 ====================== */
 
 function showStops(e) {
@@ -113,13 +136,13 @@ function showStops(e) {
   let html = "";
 
   if (e.message && e.message !== "") {
-    html += `<p class="success">${e.message}</p>`;
+    html += "<p class=\"success\">" + e.message + "</p>";
   }
 
-  html += "<ul class='stops'>";
+  html += "<ul class=\"stops\">";
 
-  e.stops.forEach(s => {
-    html += `<li>${s}</li>`;
+  e.stops.forEach(function (s) {
+    html += "<li>" + s + "</li>";
   });
 
   html += "</ul>";
@@ -128,25 +151,24 @@ function showStops(e) {
 }
 
 
-
-
 /* ======================
-   FIN
+   FIN DU JEU
 ====================== */
 
 function checkFinish() {
 
-  if (solved.every(v => v)) {
+  if (solved.every(function (v) { return v; })) {
 
     document.getElementById("final").style.display = "block";
 
-    const phrase = enigmes
-      .map(e => e.letter)
-      .join("");
+    let phrase = "";
 
-    document.getElementById("result").innerText =
-      phrase;
+    enigmes.forEach(function (e) {
+      phrase += e.letter;
+    });
+
+    document.getElementById("result").innerText = phrase;
+
   }
 
 }
-

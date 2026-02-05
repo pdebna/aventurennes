@@ -7,45 +7,39 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="game">
 
-  <h1>Les Énigmes</h1>
+  <h2 id="progress">Énigme 1 / 16</h2>
 
-  <!-- Menu -->
-  <div id="menu"></div>
+  <div id="question"></div>
 
-  <hr>
+  <input
+    type="text"
+    id="answer"
+    placeholder="Votre réponse"
+  >
 
-  <!-- Zone de jeu -->
-  <div id="game" style="display:none">
+  <button onclick="submitAnswer()">
+    Valider
+  </button>
 
-    <h2 id="progress"></h2>
+  <div id="feedback"></div>
 
-    <div id="question"></div>
-
-    <input
-      type="text"
-      id="answer"
-      placeholder="Votre réponse"
-    >
-
-    <button onclick="submitAnswer()">
-      Valider
-    </button>
-
-    <div id="feedback"></div>
-
-  </div>
+  <button
+    id="nextBtn"
+    onclick="next()"
+    style="display:none"
+  >
+    Continuer
+  </button>
 
 </div>
 
-
-<!-- Fin -->
 <div class="container" id="final" style="display:none">
 
   <h1>Bravo 🎉</h1>
 
-  <p>Vous avez découvert le message :</p>
+  <p>Vous avez découvert le message.</p>
 
   <div id="result"></div>
 

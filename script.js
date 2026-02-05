@@ -93,7 +93,7 @@ function submitAnswer() {
   } else {
 
     document.getElementById("feedback").innerText =
-      "Pas encore… regarde bien 👀";
+      "Ah non, ce n'est pas ça… tu peux tenter ta chance à nouveau !";
 
   }
 }
@@ -106,9 +106,7 @@ function submitAnswer() {
 function showStops(e) {
 
   let html =
-    `<h3>Lettre ${e.letter}</h3>
-     <p>Trace :</p>
-     <ul>`;
+    `<h3>Partons voyager...</h3>
 
   e.stops.forEach(s => {
     html += `<li>${s}</li>`;

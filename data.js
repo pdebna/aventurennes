@@ -2,10 +2,10 @@ const enigmes = [
 
   {
     id: 1,
+    N
     question: "QUESTION 1",
     answers: ["reponse 1"],
-    stops: ["ARRET A", "ARRET B", "ARRET C"],
-    letter: "V"
+    stops: ["Centre de loisirs, 74", "Hallerais, 62", "Corps-Nuds Gare, 73", "Bel Air, 73"],
   },
 
   {

@@ -12,11 +12,46 @@ let solved = [];
 
 window.onload = function () {
 
-  solved = new Array(enigmes.length).fill(false);
+  loadProgress();
+
+  if (solved.length === 0) {
+    solved = new Array(enigmes.length).fill(false);
+  }
 
   initMenu();
 
+  checkFinish();
 };
+
+
+/* ======================
+   SAUVEGARDE
+====================== */
+
+function saveProgress() {
+
+  const data = {
+    solved: solved
+  };
+
+  localStorage.setItem(
+    "temoin_game_save",
+    JSON.stringify(data)
+  );
+}
+
+function loadProgress() {
+
+  const data = localStorage.getItem("temoin_game_save");
+
+  if (data) {
+
+    const parsed = JSON.parse(data);
+
+    solved = parsed.solved || [];
+
+  }
+}
 
 
 /* ======================
@@ -111,6 +146,8 @@ function submitAnswer() {
 
     solved[current] = true;
 
+    saveProgress(); // 💾 sauvegarde
+
     showStops(e);
 
     initMenu();
@@ -157,6 +194,8 @@ function showStops(e) {
 
 function checkFinish() {
 
+  if (solved.length === 0) return;
+
   if (solved.every(function (v) { return v; })) {
 
     document.getElementById("final").style.display = "block";
@@ -167,8 +206,11 @@ function checkFinish() {
       phrase += e.letter;
     });
 
-    document.getElementById("result").innerText = phrase;
+    document.getElementById("result").innerText =
+      phrase;
 
+    // Message spécial
+    alert("🎉 Bravo ! Vous avez terminé toutes les énigmes !");
   }
 
 }

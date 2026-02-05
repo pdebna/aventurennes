@@ -105,10 +105,7 @@ function submitAnswer() {
 
 function showStops(e) {
 
-  let html =
-    `<h3>Lettre ${e.letter}</h3>
-     <p>Trace :</p>
-     <ul>`;
+  let html = "<ul>";
 
   e.stops.forEach(s => {
     html += `<li>${s}</li>`;
@@ -116,9 +113,12 @@ function showStops(e) {
 
   html += "</ul>";
 
+  if(e.message && e.message !== "") {
+    html += `<p><em>${e.message}</em></p>`;
+  }
+
   document.getElementById("feedback").innerHTML = html;
 }
-
 
 /* ======================
    FIN

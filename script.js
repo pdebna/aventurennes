@@ -44,7 +44,7 @@ function loadEnigme(index) {
   document.getElementById("game").style.display = "block";
 
   document.getElementById("progress").innerText =
-    `Énigme ${index + 1} / ${enigmes.length}`;
+    `Énigme ${index + 1} ;
 
   document.getElementById("question").innerText =
     e.question;

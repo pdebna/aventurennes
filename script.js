@@ -3,7 +3,7 @@ let solved = new Array(enigmes.length).fill(false);
 
 initMenu();
 
-/* =====================
+/* ======================
    MENU
 ====================== */
 
@@ -93,7 +93,7 @@ function submitAnswer() {
   } else {
 
     document.getElementById("feedback").innerText =
-      "Ah non, ce n'est pas ça… tu peux tenter ta chance à nouveau !";
+      "Pas encore… regarde bien 👀";
 
   }
 }
@@ -106,7 +106,9 @@ function submitAnswer() {
 function showStops(e) {
 
   let html =
-    `<h3>Partons voyager...</h3>
+    `<h3>Lettre ${e.letter}</h3>
+     <p>Trace :</p>
+     <ul>`;
 
   e.stops.forEach(s => {
     html += `<li>${s}</li>`;
@@ -137,3 +139,4 @@ function checkFinish() {
   }
 
 }
+

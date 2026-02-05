@@ -105,10 +105,13 @@ function submitAnswer() {
 
 function showStops(e) {
 
-  let html =
-    `<h3>Lettre ${e.letter}</h3>
-     <p>Trace :</p>
-     <ul>`;
+  let html = "";
+
+  if (e.message && e.message !== "") {
+    html += `<p class="success">${e.message}</p>`;
+  }
+
+  html += "<ul class='stops'>";
 
   e.stops.forEach(s => {
     html += `<li>${s}</li>`;
@@ -118,6 +121,7 @@ function showStops(e) {
 
   document.getElementById("feedback").innerHTML = html;
 }
+
 
 
 /* ======================

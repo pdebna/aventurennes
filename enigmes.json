@@ -2,26 +2,181 @@
   "enigmes": [
     {
       "id": 1,
-      "question": "Je suis un lieu emblématique de Rennes, souvent fréquenté par les étudiants. Qui suis-je ?",
-      "reponse": "Café Breton",
-      "commentaire": "Bravo ! C'est ici qu'on a passé tant de soirées à refaire le monde.",
+      "question": "Je suis le parc le plus célèbre de Rennes, où l’on aime se promener et pique-niquer. Qui suis-je ?",
+      "reponse": "Thabor",
+      "commentaire": "Bravo ! C’est ici qu’on a partagé nos premiers pique-niques entre amis.",
       "arrets": [
-        { "nom": "Place Sainte-Anne", "ligne": "4" },
-        { "nom": "République", "ligne": "1" },
-        { "nom": "Colombier", "ligne": "9" },
-        { "nom": "Saint-Georges", "ligne": "11" }
+        {"nom": "Thabor", "ligne": "3"},
+        {"nom": "Gares", "ligne": "1"},
+        {"nom": "Saint-Hélier", "ligne": "8"},
+        {"nom": "Les Lices", "ligne": "9"}
       ]
     },
     {
       "id": 2,
-      "question": "Quel est le nom du parc où on a pique-niqué l'été dernier ?",
-      "reponse": "Parc du Thabor",
-      "commentaire": "Un classique ! Et surtout, n'oubliez pas les crêpes.",
+      "question": "Je suis la rue emblématique de Rennes où les étudiants aiment faire la fête. Quel est mon nom ?",
+      "reponse": "Rue de la Psalette",
+      "commentaire": "Exact ! Combien de soirées mémorables ici ?",
       "arrets": [
-        { "nom": "Thabor", "ligne": "3" },
-        { "nom": "Gares", "ligne": "1" },
-        { "nom": "Jacquard", "ligne": "7" }
+        {"nom": "Psalette", "ligne": "9"},
+        {"nom": "Saint-Michel", "ligne": "6"},
+        {"nom": "Villejean-Université", "ligne": "4"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Je suis le musée des Beaux-Arts de Rennes, situé dans un parc. Quel est mon nom ?",
+      "reponse": "Musée de Bretagne",
+      "commentaire": "Bien joué ! On y a découvert tant d’histoires bretonnes.",
+      "arrets": [
+        {"nom": "Musée de Bretagne", "ligne": "1"},
+        {"nom": "Champs Libres", "ligne": "1"},
+        {"nom": "Gares", "ligne": "1"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Je suis le marché couvert du centre-ville, où l’on trouve des produits locaux. Qui suis-je ?",
+      "reponse": "Marché des Lices",
+      "commentaire": "Parfait ! C’est ici qu’on achète nos fromages préférés.",
+      "arrets": [
+        {"nom": "Les Lices", "ligne": "9"},
+        {"nom": "République", "ligne": "1"},
+        {"nom": "Colombier", "ligne": "9"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Je suis la place centrale de Rennes, entourée de maisons à pans de bois. Quel est mon nom ?",
+      "reponse": "Place des Lices",
+      "commentaire": "Super ! Le cœur historique de Rennes.",
+      "arrets": [
+        {"nom": "Les Lices", "ligne": "9"},
+        {"nom": "République", "ligne": "1"},
+        {"nom": "Parlement", "ligne": "11"}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Je suis le canal qui traverse Rennes et offre une belle balade. Qui suis-je ?",
+      "reponse": "Canal d’Ille-et-Rance",
+      "commentaire": "Génial ! On y a fait de belles promenades en vélo.",
+      "arrets": [
+        {"nom": "Saint-Georges", "ligne": "11"},
+        {"nom": "Villejean-Université", "ligne": "4"},
+        {"nom": "J.F. Kennedy", "ligne": "6"}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Je suis le quartier étudiant de Rennes, connu pour son ambiance jeune. Quel est mon nom ?",
+      "reponse": "Villejean",
+      "commentaire": "Exact ! Le quartier où tout a commencé.",
+      "arrets": [
+        {"nom": "Villejean-Université", "ligne": "4"},
+        {"nom": "Poterie", "ligne": "6"},
+        {"nom": "Triangle", "ligne": "1"}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Je suis la gare principale de Rennes, point de départ de nombreux voyages. Qui suis-je ?",
+      "reponse": "Gare de Rennes",
+      "commentaire": "Bien vu ! D’ici, on part à l’aventure.",
+      "arrets": [
+        {"nom": "Gares", "ligne": "1"},
+        {"nom": "Colombier", "ligne": "9"},
+        {"nom": "Saint-Jacques-Gaîté", "ligne": "8"}
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Je suis le stade où l’on vibre pour le Stade Rennais. Quel est mon nom ?",
+      "reponse": "Roazhon Park",
+      "commentaire": "Allez Rennes ! Combien de matchs inoubliables ici ?",
+      "arrets": [
+        {"nom": "Roazhon Park", "ligne": "6"},
+        {"nom": "Clemenceau", "ligne": "1"},
+        {"nom": "Saint-Laurent", "ligne": "9"}
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Je suis le quartier historique de Rennes, avec ses maisons à colombages. Qui suis-je ?",
+      "reponse": "Centre-ville",
+      "commentaire": "Magnifique ! Le charme de la vieille ville.",
+      "arrets": [
+        {"nom": "République", "ligne": "1"},
+        {"nom": "Parlement", "ligne": "11"},
+        {"nom": "Sainte-Anne", "ligne": "4"}
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Je suis le lieu où l’on peut voir des concerts et spectacles à Rennes. Quel est mon nom ?",
+      "reponse": "Le Liberté",
+      "commentaire": "Super ! Combien de concerts mémorables ici ?",
+      "arrets": [
+        {"nom": "Liberté", "ligne": "9"},
+        {"nom": "Colombier", "ligne": "9"},
+        {"nom": "Saint-Georges", "ligne": "11"}
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Je suis le parc où se trouve la célèbre 'Maison du Parc' à Rennes. Qui suis-je ?",
+      "reponse": "Parc du Thabor",
+      "commentaire": "Bien joué ! Un havre de paix en plein centre-ville.",
+      "arrets": [
+        {"nom": "Thabor", "ligne": "3"},
+        {"nom": "Gares", "ligne": "1"},
+        {"nom": "Saint-Hélier", "ligne": "8"}
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Je suis le quartier où se trouve la faculté de droit de Rennes. Quel est mon nom ?",
+      "reponse": "Centre-ville",
+      "commentaire": "Exact ! Le quartier des étudiants en droit.",
+      "arrets": [
+        {"nom": "République", "ligne": "1"},
+        {"nom": "Parlement", "ligne": "11"},
+        {"nom": "Sainte-Anne", "ligne": "4"}
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Je suis le lieu où l’on peut voir des expositions d’art contemporain à Rennes. Qui suis-je ?",
+      "reponse": "FRAC Bretagne",
+      "commentaire": "Parfait ! Un lieu pour les amateurs d’art moderne.",
+      "arrets": [
+        {"nom": "FRAC", "ligne": "9"},
+        {"nom": "Saint-Georges", "ligne": "11"},
+        {"nom": "Colombier", "ligne": "9"}
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Je suis le quartier où se trouve l’école des Beaux-Arts de Rennes. Quel est mon nom ?",
+      "reponse": "Quartier Thabor - Saint-Hélier",
+      "commentaire": "Bien trouvé ! Le quartier des artistes.",
+      "arrets": [
+        {"nom": "Thabor", "ligne": "3"},
+        {"nom": "Saint-Hélier", "ligne": "8"},
+        {"nom": "Gares", "ligne": "1"}
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Je suis le lieu où se déroule le marché de Noël de Rennes. Quel est mon nom ?",
+      "reponse": "Place de la Mairie",
+      "commentaire": "Super ! L’ambiance magique de Noël à Rennes.",
+      "arrets": [
+        {"nom": "Mairie", "ligne": "1"},
+        {"nom": "République", "ligne": "1"},
+        {"nom": "Parlement", "ligne": "11"}
       ]
     }
   ]
 }
+

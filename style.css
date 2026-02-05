@@ -1,25 +1,37 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 20px;
-}
-
-button {
-  margin: 5px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#enigme-container {
-  margin-top: 20px;
+  margin: 0;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-#resultat {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f9f9f9;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #8e44ad; /* Violet pour un côté festif */
+}
+
+.bouton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #8e44ad;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.bouton:hover {
+  background-color: #6c3483;
 }

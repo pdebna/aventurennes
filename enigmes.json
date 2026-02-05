@@ -1,0 +1,28 @@
+{
+  "enigmes": [
+    {
+      "id": 1,
+      "question": "Je suis un lieu emblématique de Rennes, souvent fréquenté par les étudiants. Qui suis-je ?",
+      "reponse": "Café Breton",
+      "commentaire": "Bravo ! C'est ici qu'on a passé tant de soirées à refaire le monde.",
+      "arrets": [
+        { "nom": "Place Sainte-Anne", "ligne": "4" },
+        { "nom": "République", "ligne": "1" },
+        { "nom": "Colombier", "ligne": "9" },
+        { "nom": "Saint-Georges", "ligne": "11" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Quel est le nom du parc où on a pique-niqué l'été dernier ?",
+      "reponse": "Parc du Thabor",
+      "commentaire": "Un classique ! Et surtout, n'oubliez pas les crêpes.",
+      "arrets": [
+        { "nom": "Thabor", "ligne": "3" },
+        { "nom": "Gares", "ligne": "1" },
+        { "nom": "Jacquard", "ligne": "7" }
+      ]
+    }
+    // ... jusqu'à 16 énigmes
+  ]
+}

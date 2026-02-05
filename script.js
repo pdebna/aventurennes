@@ -3,7 +3,7 @@ let solved = new Array(enigmes.length).fill(false);
 
 initMenu();
 
-/* ======================
+/* =====================
    MENU
 ====================== */
 

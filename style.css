@@ -1,37 +1,42 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
+  background: #f4f4f4;
   margin: 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-h1 {
-  color: #8e44ad; /* Violet pour un côté festif */
+h1, h2 {
+  margin-bottom: 20px;
 }
 
-.bouton {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #8e44ad;
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button, .btn {
+  background: #2c5cff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
 }
 
-.bouton:hover {
-  background-color: #6c3483;
+button:hover, .btn:hover {
+  opacity: 0.9;
+}
+
+#feedback {
+  margin-top: 15px;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Jeu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="game">
+
+  <h2 id="progress">Énigme 1 / 16</h2>
+
+  <div id="question"></div>
+
+  <input
+    type="text"
+    id="answer"
+    placeholder="Votre réponse"
+  >
+
+  <button onclick="submitAnswer()">
+    Valider
+  </button>
+
+  <div id="feedback"></div>
+
+  <button
+    id="nextBtn"
+    onclick="next()"
+    style="display:none"
+  >
+    Continuer
+  </button>
+
+</div>
+
+<div class="container" id="final" style="display:none">
+
+  <h1>Bravo 🎉</h1>
+
+  <p>Vous avez découvert le message.</p>
+
+  <div id="result"></div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

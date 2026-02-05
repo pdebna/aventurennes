@@ -40,12 +40,18 @@ button:hover, .btn:hover {
 #feedback {
   margin-top: 15px;
 }
+
 #menu {
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0;
 }
 
 #menu button {
-  margin: 5px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .solved {

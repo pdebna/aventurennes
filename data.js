@@ -5,7 +5,7 @@ const enigmes = [
     question: "QUESTION 1",
     answers: ["reponse 1"],
     stops: ["ARRET A", "ARRET B", "ARRET C"],
-    letter: "V"
+    message: "Ça en fait des colonnes !"
   },
 
   {
@@ -13,7 +13,7 @@ const enigmes = [
     question: "QUESTION 2",
     answers: ["reponse 2"],
     stops: ["ARRET D", "ARRET E", "ARRET F"],
-    letter: "E"
+    message: "Bien joué !"
   },
 
   {
@@ -21,7 +21,7 @@ const enigmes = [
     question: "QUESTION 3",
     answers: ["reponse 3"],
     stops: ["ARRET G", "ARRET H", "ARRET I"],
-    letter: "U"
+    message: "Bien joué !"
   },
 
   {
@@ -29,7 +29,7 @@ const enigmes = [
     question: "QUESTION 4",
     answers: ["reponse 4"],
     stops: ["ARRET J", "ARRET K", "ARRET L"],
-    letter: "X"
+    message: "Bien joué !""
   },
 
   {
@@ -37,7 +37,7 @@ const enigmes = [
     question: "QUESTION 5",
     answers: ["reponse 5"],
     stops: ["ARRET M", "ARRET N", "ARRET O"],
-    letter: "T"
+    message: "Bien joué !"
   },
 
   {
@@ -45,7 +45,7 @@ const enigmes = [
     question: "QUESTION 6",
     answers: ["reponse 6"],
     stops: ["ARRET P", "ARRET Q", "ARRET R"],
-    letter: "U"
+    message: "Bien joué !"
   },
 
   {
@@ -53,7 +53,7 @@ const enigmes = [
     question: "QUESTION 7",
     answers: ["reponse 7"],
     stops: ["ARRET S", "ARRET T", "ARRET U"],
-    letter: "E"
+    message: "Bien joué !"
   },
 
   {
@@ -61,7 +61,7 @@ const enigmes = [
     question: "QUESTION 8",
     answers: ["reponse 8"],
     stops: ["ARRET V", "ARRET W", "ARRET X"],
-    letter: "T"
+    message: "Bien joué !"
   },
 
   {
@@ -69,7 +69,7 @@ const enigmes = [
     question: "QUESTION 9",
     answers: ["reponse 9"],
     stops: ["ARRET Y", "ARRET Z", "ARRET A1"],
-    letter: "R"
+    message: "Bien joué !"
   },
 
   {
@@ -85,7 +85,7 @@ const enigmes = [
     question: "QUESTION 11",
     answers: ["reponse 11"],
     stops: ["ARRET E1", "ARRET F1", "ARRET G1"],
-    letter: "T"
+    message: "Bien joué !"
   },
 
   {
@@ -93,7 +93,7 @@ const enigmes = [
     question: "QUESTION 12",
     answers: ["reponse 12"],
     stops: ["ARRET H1", "ARRET I1", "ARRET J1"],
-    letter: "E"
+    message: "Bien joué !"
   },
 
   {
@@ -109,7 +109,7 @@ const enigmes = [
     question: "QUESTION 14",
     answers: ["reponse 14"],
     stops: ["ARRET N1", "ARRET O1", "ARRET P1"],
-    letter: "O"
+    message: "Bien joué !"
   },
 
   {
@@ -117,7 +117,7 @@ const enigmes = [
     question: "QUESTION 15",
     answers: ["reponse 15"],
     stops: ["ARRET Q1", "ARRET R1", "ARRET S1"],
-    letter: "I"
+    message: "Bien joué !"
   },
 
   {
@@ -125,7 +125,7 @@ const enigmes = [
     question: "QUESTION 16",
     answers: ["reponse 16"],
     stops: ["ARRET T1", "ARRET U1", "ARRET V1"],
-    letter: "N"
+    message: "Bien joué !"
   }
 
 ];

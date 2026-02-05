@@ -1,7 +1,14 @@
 let current = null;
-let solved = new Array(enigmes.length).fill(false);
+let solved = [];
 
-initMenu();
+// Attendre que tout soit chargé
+window.onload = function () {
+
+  solved = new Array(enigmes.length).fill(false);
+
+  initMenu();
+
+};
 
 /* ======================
    MENU
@@ -85,8 +92,6 @@ function submitAnswer() {
     solved[current] = true;
 
     showStops(e);
-
-    initMenu();
 
     checkFinish();
 

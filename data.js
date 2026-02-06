@@ -35,11 +35,13 @@ const enigmes = [
 
   {
     id: 4,
-    question: "QUESTION 4",
-    answers: ["reponse 4"],
-    stops: ["ARRET J", "ARRET K", "ARRET L"],
-    letter: "X",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Combien d'étages compte le plus haut immeuble de Rennes, les Horizons ?",
+    answers: ["30"],
+    intro: "Ne nous arrêtons pas en si bon chemin !",
+    message: "Construit en 1970 par Georges Maillols, il s'agit à l'époque de l'un des plus hauts immeubles d'habitation du pays. On le qualifie même de gratte-ciel !",
+    stops: ["Pont-Brand - 78", "CHP Saint Grégoire - 178ex", "Maison Blanche - 70", "Betton Centre - 71"],
+    letter: "U1",
+    image: "images/horizons.jpg" 
   },
 
   {

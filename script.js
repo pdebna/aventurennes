@@ -50,6 +50,13 @@ function loadProgress() {
   }
 }
 
+/* ======================
+   Réinitialisation
+====================== */
+function resetGame() {
+  localStorage.removeItem("temoin_game_save");
+  location.reload();
+}
 
 /* ======================
    MENU

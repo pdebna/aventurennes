@@ -19,7 +19,7 @@ window.onload = function () {
   }
 
   initMenu();
-
+  updateProgressBar();
   checkFinish();
 };
 
@@ -45,21 +45,9 @@ function loadProgress() {
   const data = localStorage.getItem("temoin_game_save");
 
   if (data) {
-
     const parsed = JSON.parse(data);
-
     solved = parsed.solved || [];
-
   }
-}
-
-
-/* ======================
-   REINITILISATION
-====================== */
-function resetGame() {
-  localStorage.removeItem("temoin_game_save");
-  location.reload();
 }
 
 
@@ -94,6 +82,20 @@ function initMenu() {
 
 
 /* ======================
+   BARRE DE PROGRESSION
+====================== */
+
+function updateProgressBar() {
+
+  const count = solved.filter(v => v).length;
+  const total = enigmes.length;
+
+  document.getElementById("progress-bar").innerText =
+    count + " énigmes résolues sur " + total + " !";
+}
+
+
+/* ======================
    JEU
 ====================== */
 
@@ -111,8 +113,24 @@ function loadEnigme(index) {
   document.getElementById("question").innerText =
     e.question;
 
-  document.getElementById("answer").value = "";
-  document.getElementById("feedback").innerHTML = "";
+  const input = document.getElementById("answer");
+  const feedback = document.getElementById("feedback");
+
+  feedback.innerHTML = "";
+
+  // Si déjà résolue → on affiche directement
+  if (solved[index]) {
+
+    input.style.display = "none";
+
+    showStops(e);
+
+  } else {
+
+    input.style.display = "block";
+    input.value = "";
+  }
+
 }
 
 
@@ -139,28 +157,28 @@ function submitAnswer() {
 
   if (current === null) return;
 
-  const input = normalize(
-    document.getElementById("answer").value
-  );
+  const inputField = document.getElementById("answer");
+
+  const input = normalize(inputField.value);
 
   const e = enigmes[current];
 
   const valid = e.answers
-    .map(function (a) {
-      return normalize(a);
-    })
+    .map(a => normalize(a))
     .includes(input);
 
   if (valid) {
 
     solved[current] = true;
 
-    saveProgress(); // 💾 sauvegarde
+    saveProgress();
+
+    inputField.style.display = "none";
 
     showStops(e);
 
     initMenu();
-
+    updateProgressBar();
     checkFinish();
 
   } else {
@@ -181,13 +199,20 @@ function showStops(e) {
 
   let html = "";
 
-  if (e.message && e.message !== "") {
-    html += "<p class=\"success\">" + e.message + "</p>";
+  // Message
+  if (e.message) {
+    html += "<p class='success'>" + e.message + "</p>";
   }
 
-  html += "<ul class=\"stops\">";
+  // Image
+  if (e.image) {
+    html += "<img src='" + e.image + "' class='result-img'>";
+  }
 
-  e.stops.forEach(function (s) {
+  // Liste arrêts
+  html += "<ul class='stops'>";
+
+  e.stops.forEach(s => {
     html += "<li>" + s + "</li>";
   });
 
@@ -205,20 +230,19 @@ function checkFinish() {
 
   if (solved.length === 0) return;
 
-  if (solved.every(function (v) { return v; })) {
+  if (solved.every(v => v)) {
 
     document.getElementById("final").style.display = "block";
 
     let phrase = "";
 
-    enigmes.forEach(function (e) {
+    enigmes.forEach(e => {
       phrase += e.letter;
     });
 
     document.getElementById("result").innerText =
       phrase;
 
-    // Message spécial
     alert("🎉 Bravo ! Vous avez terminé toutes les énigmes !");
   }
 

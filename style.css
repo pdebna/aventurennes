@@ -132,7 +132,6 @@ ul.stops {
 
 .result-img {
   max-width: 90%;
-  max-height: 300px
   margin: 15px auto;
   display: block;
   border-radius: 8px;
@@ -146,7 +145,7 @@ ul.stops {
 
 #final-answer {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.5em;
   margin: 10px;
   color: #2c7a2c;
 }

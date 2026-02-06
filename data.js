@@ -8,7 +8,7 @@ const enigmes = [
     stops: ["Centre de loisirs - 74", "Hallerais - 62", "Corps-Nuds Gare - 73", "Bel-Air - 73"],
     letter: "N",
     message: "Clin d'oeil de l'architecte, on en trouve exactement le même nombre à l'intérieur ! Comptez, vous verrez 😜",
-    image: "stpierre.jpg" 
+    image: "images/stpierre.jpg" 
   },
 
   {
@@ -19,7 +19,7 @@ const enigmes = [
     stops: ["Champs-Péans - 67", "Moulin de Joué - 67", "En suivant la voie ferrée, gagnez Rond-Point de Bray - 67 ; puis rebroussez chemin", "Le Blosne - a", "Bois de Soeuvres - 73"],
     letter: "E1",
     message: "L’hôtel particulier de 1912, de style Louis-XVI, fut remanié après la guerre avec un auvent Art nouveau très distinctif.",
-    image: "ouestfrance.jpg" 
+    image: "images/ouestfrance.jpg" 
   },
 
   {
@@ -29,7 +29,7 @@ const enigmes = [
     stops: ["Institu Agro - 53", "Pont de Bretagne - 53", "Chèques Postaux - 53", "Maltière - C7"],
     letter: "T3",
     message: "Peinte vers 1648, il s'agit de la plus célèbre toile du peintre lorrain. Sa présence mérite bien une petit visite au musée, quai Zola !",
-    image: "nouveaune.jpg" 
+    image: "images/nouveaune.jpg" 
   },
 
   {

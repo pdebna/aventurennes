@@ -124,3 +124,20 @@ ul.stops {
   background: #c8f7c5;
 }
 
+#progress-bar {
+  text-align: center;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.result-img {
+  max-width: 90%;
+  margin: 15px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.success {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

@@ -24,11 +24,12 @@ const enigmes = [
 
   {
     id: 3,
-    question: "QUESTION 3",
-    answers: ["reponse 3"],
-    stops: ["ARRET G", "ARRET H", "ARRET I"],
-    letter: "U",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quelle oeuvre de Georges de La Tour est conservée au Musée des Beaux-Arts de Rennes ?",
+    answers: ["Le Nouveau-Né"],
+    stops: ["Institu Agro - 53", "Pont de Bretagne - 53", "Chèques Postaux - 53", "Maltière - C7"],
+    letter: "T3",
+    message: "Peinte vers 1648, il s'agit de la plus célèbre toile du peintre lorrain. Sa présence mérite bien une petit visite au musée, quai Zola !",
+    image: "nouveaune.jpg" 
   },
 
   {

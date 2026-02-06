@@ -159,13 +159,13 @@ function loadEnigme(index) {
 ====================== */
 
 function normalize(str) {
-
   return str
     .toLowerCase()
     .trim()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[-']/g, "")   // enlève tirets et apostrophes
+    .replace(/\s+/g, " "); // normalise les espaces
 }
 
 

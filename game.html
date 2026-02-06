@@ -38,9 +38,15 @@
       placeholder="Votre réponse"
     >
 
-    <button onclick="submitAnswer()">
-      Valider
-    </button>
+<div id="answer-zone">
+
+  <button id="validate-btn" onclick="submitAnswer()">
+    Vérifier la réponse
+  </button>
+
+  <div id="final-answer"></div>
+
+</div>
 
     <div id="feedback"></div>
 

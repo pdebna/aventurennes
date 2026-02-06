@@ -132,6 +132,7 @@ ul.stops {
 
 .result-img {
   max-width: 90%;
+  max-height: 300px
   margin: 15px auto;
   display: block;
   border-radius: 8px;

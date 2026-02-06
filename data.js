@@ -6,7 +6,8 @@ const enigmes = [
     answers: ["reponse 1"],
     stops: ["ARRET A", "ARRET B", "ARRET C"],
     letter: "V",
-    message: "Eh bien, ça en fait des colonnes !"
+    message: "Eh bien, ça en fait des colonnes !",
+    image: "colonne.jpg" 
   },
 
   {

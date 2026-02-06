@@ -4,7 +4,7 @@ const enigmes = [
     id: 1,
     question: "Combien de colonnes compte-t-on sur la façade de la Cathédrale Saint-Pierre ?",
     answers: ["42"],
-    intro: "Commençons notre voyage à travers le pays Rennais :",
+    intro: "Commençons notre voyage à travers le pays Rennais en redant visite à ces arrêts. Tracez soigneusement la route empruntée entre chaque, à vol d'oiseau, à l'aide d'un fluo !",
     stops: ["Centre de loisirs - 74", "Hallerais - 62", "Corps-Nuds Gare - 73", "Bel-Air - 73"],
     letter: "N",
     message: "Clin d'oeil de l'architecte, on en trouve exactement le même nombre à l'intérieur ! Comptez, vous verrez 😜",

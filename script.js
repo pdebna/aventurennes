@@ -123,20 +123,33 @@ function loadEnigme(index) {
   const input = document.getElementById("answer");
   const feedback = document.getElementById("feedback");
 
+   const btn = document.getElementById("validate-btn");
+   const finalAnswer = document.getElementById("final-answer");
+   
   feedback.innerHTML = "";
 
   // Si déjà résolue → on affiche directement
-  if (solved[index]) {
+ if (solved[index]) {
 
-    input.style.display = "none";
+  input.style.display = "none";
+  btn.style.display = "none";
 
-    showStops(e);
+  finalAnswer.style.display = "block";
+  finalAnswer.innerText = e.answers[0];
 
-  } else {
+  showStops(e);
 
-    input.style.display = "block";
-    input.value = "";
-  }
+} else {
+
+  input.style.display = "block";
+  btn.style.display = "inline-block";
+
+  finalAnswer.style.display = "none";
+  finalAnswer.innerText = "";
+
+  input.value = "";
+}
+
 
 }
 
@@ -165,6 +178,9 @@ function submitAnswer() {
   if (current === null) return;
 
   const inputField = document.getElementById("answer");
+ 
+const btn = document.getElementById("validate-btn");
+const finalAnswer = document.getElementById("final-answer");
 
   const input = normalize(inputField.value);
 
@@ -174,19 +190,24 @@ function submitAnswer() {
     .map(a => normalize(a))
     .includes(input);
 
-  if (valid) {
+if (valid) {
 
-    solved[current] = true;
+  solved[current] = true;
 
-    saveProgress();
+  saveProgress();
 
-    inputField.style.display = "none";
+  inputField.style.display = "none";
+  btn.style.display = "none";
 
-    showStops(e);
+  finalAnswer.style.display = "block";
+  finalAnswer.innerText = e.answers[0];
 
-    initMenu();
-    updateProgressBar();
-    checkFinish();
+  showStops(e);
+
+  initMenu();
+  updateProgressBar();
+  checkFinish();
+
 
   } else {
 

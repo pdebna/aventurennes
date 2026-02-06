@@ -3,7 +3,7 @@ const enigmes = [
   {
     id: 1,
     question: "Combien de colonnes compte-t-on sur la façade de la Cathédrale Saint-Pierre ?",
-    answers: ["44"],
+    answers: ["42"],
     stops: ["Centre de loisirs - 74", "Hallerais - 62", "Corps-Nuds Gare - 73", "Bel-Air - 73"],
     letter: "N",
     message: "Clin d'oeil de l'architecte, on en trouve exactement le même nombre à l'intérieur ! Comptez, vous verrez 😜",

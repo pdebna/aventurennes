@@ -148,3 +148,9 @@ ul.stops {
   margin: 10px;
   color: #2c7a2c;
 }
+
+.stops-intro {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}

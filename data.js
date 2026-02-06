@@ -2,21 +2,22 @@ const enigmes = [
 
   {
     id: 1,
-    question: "QUESTION 1",
-    answers: ["reponse 1"],
-    stops: ["ARRET A", "ARRET B", "ARRET C"],
-    letter: "V",
-    message: "Eh bien, ça en fait des colonnes !",
-    image: "colonne.jpg" 
+    question: "Combien de colonnes compte-t-on sur la façade de la Cathédrale Saint-Pierre ?",
+    answers: ["44"],
+    stops: ["Centre de loisirs - 74", "Hallerais - 62", "Corps-Nuds Gare - 73", "Bel-Air - 73"],
+    letter: "N",
+    message: "Clin d'oeil de l'architecte, on en trouve exactement le même nombre à l'intérieur ! Comptez, vous verrez 😜",
+    image: "stpierre.jpg" 
   },
 
   {
     id: 2,
-    question: "QUESTION 2",
-    answers: ["reponse 2"],
-    stops: ["ARRET D", "ARRET E", "ARRET F"],
-    letter: "E",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quel journal avait son siège au 38 rue du Pré Botté, dans un hôtel construit en 1912 ?",
+    answers: ["Ouest-France"],
+    stops: ["Champs-Péans - 67", "Moulin de Joué - 67", "En suivant la voie ferrée, gagnez Rond-Point de Bray - 67 ; puis rebroussez chemin", "Le Blosne - a", "Bois de Soeuvres - 73"],
+    letter: "E1",
+    message: "L’hôtel particulier de 1912, de style Louis-XVI, fut remanié après la guerre avec un auvent Art nouveau très distinctif.",
+    image: "ouestfrance.jpg" 
   },
 
   {

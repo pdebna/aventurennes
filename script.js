@@ -238,6 +238,10 @@ function showStops(e) {
   }
 
   // Liste arrêts
+if (e.intro) {
+    html += `<p class="stops-intro">${e.intro}</p>`;
+  }
+   
   html += "<ul class='stops'>";
 
   e.stops.forEach(s => {

@@ -46,74 +46,74 @@ const enigmes = [
 
   {
     id: 5,
-    question: "QUESTION 5",
-    answers: ["reponse 5"],
-    stops: ["ARRET M", "ARRET N", "ARRET O"],
-    letter: "T",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Depuis quelle année est organisé le marché des Lices, chaque samedi matin ?",
+    answers: ["1622"],
+    stops: ["Petite Hulotais - 70", "Curien - 83", "Juteauderies - 50", "Château de Vaux - 50"],
+    letter: "X",
+    message: "Et c'est aujourd'hui le deuxième plus grand marché alimentaire de France !"
   },
 
   {
     id: 6,
-    question: "QUESTION 6",
-    answers: ["reponse 6"],
-    stops: ["ARRET P", "ARRET Q", "ARRET R"],
-    letter: "U",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "De quel siècle datent les maisons les plus anciennes de Rennes, toujours debout ?",
+    answers: ["XVe siècle", "15e siècle", "XV siècle", "15 siècle", "XV", "15"],
+    stops: ["Viennais - 52", "Parthenay Fontaine - 65", "Placis de la Touche - 65", "Pâtis Roussel - 77", "PLacis de la Touche - 65", "Haute Rabine - 65", "Décoparc - Metrie - 168ex"],
+    letter: "E2",
+    message: "On les trouve notamment rue de la Psalette et rue du Chapitre."
   },
 
   {
     id: 7,
-    question: "QUESTION 7",
-    answers: ["reponse 7"],
-    stops: ["ARRET S", "ARRET T", "ARRET U"],
-    letter: "E",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quel évêque a donné à la cathédrale de Rennes son visage actuel ?",
+    answers: ["Mgr Brossay Saint Marc", "Brossay Saint Marc", "Brossay-Saint-Marc", "Mgr Brossay-Saint-Marc"],
+    stops: ["Bécherel Centre - 82", "Mettrie Templiers - 82", "Chapelle-Chaussée - 82"],
+    letter: "V",
+    message: "Il voulait en faire le pendant de St Pierre de Rome. Pas si mal réussi !"
   },
 
   {
     id: 8,
-    question: "QUESTION 8",
-    answers: ["reponse 8"],
-    stops: ["ARRET V", "ARRET W", "ARRET X"],
-    letter: "T",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quel événement a marqué la ville en 1720 ?",
+    answers: ["Un incendie", "incendie"],
+    stops: ["Pôle Sud - 91", "Rivaudière - 79", "Château d'eau - 80", "Surcouf - 74", "Monts Gaultier - 91", "Pôle Sud - 91"],
+    letter: "O",
+    message: "Il ravagea 40% de la ville..."
   },
 
   {
     id: 9,
-    question: "QUESTION 9",
-    answers: ["reponse 9"],
-    stops: ["ARRET Y", "ARRET Z", "ARRET A1"],
-    letter: "R",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "De quel commerce est parti l'incendie de 1720 ?",
+    answers: ["menuisier", "menuiserie"],
+    stops: ["Molière - 61", "Perelle - 74"],
+    letter: "I",
+    message: "Ivre, le menuisier se serait disputé avec sa femme et aurait fait tomber une bougie sur un tas de copeaux."
   },
 
   {
     id: 10,
-    question: "QUESTION 10",
-    answers: ["reponse 10"],
-    stops: ["ARRET B1", "ARRET C1", "ARRET D1"],
-    letter: "E",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Combien de variétés de roses abrite la roseraie du Thabor ?",
+    answers: ["900"],
+    stops: ["Merlin - 53","Tertre - 53", "Les Pins - 54", "Berthault - 54", "Les Pins - 54", "Pont d'Avoine - 56"],
+    letter: "E3",
+    message: "Plus exactement, 2500 roses de 900 variétés différentes."
   },
 
   {
     id: 11,
-    question: "QUESTION 11",
-    answers: ["reponse 11"],
-    stops: ["ARRET E1", "ARRET F1", "ARRET G1"],
-    letter: "T",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quel château rennais fut détruit en 1967 ?",
+    answers: ["Bréquigny", "Château de Bréquigny"],
+    stops: ["Gingouillère - 79", "Lande du Pont - C7", "Mare de la Salle - 91", "Croix aux Potiers - 72", "Point du Jour - 79"],
+    letter: "M",
+    message: "Il a été racheté par la Ville de Rennes. Après avoir servi d'HLM durant quelques années, il a été rasé pour construire le lycée actuel."
   },
 
   {
     id: 12,
-    question: "QUESTION 12",
-    answers: ["reponse 12"],
-    stops: ["ARRET H1", "ARRET I1", "ARRET J1"],
-    letter: "E",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Combien de couvents comptait Rennes à la Révolution ?",
+    answers: ["24"],
+    stops: ["Fréville - a", "République - a", "Robidou - 67", "Jacques Cartier - a", "Triangle - a"],
+    letter: "R",
+    message: "Il en retse bien peu de communautés... Mais bon nombre de bâtiments sont toujours présents."
   },
 
   {

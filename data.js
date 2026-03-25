@@ -51,6 +51,7 @@ const enigmes = [
     stops: ["Petite Hulotais - 70", "Curien - 83", "Juteauderies - 50", "Château de Vaux - 50"],
     letter: "X",
     message: "Et c'est aujourd'hui le deuxième plus grand marché alimentaire de France !"
+    image: "images/lices.jpg" 
   },
 
   {
@@ -60,6 +61,7 @@ const enigmes = [
     stops: ["Viennais - 52", "Parthenay Fontaine - 65", "Placis de la Touche - 65", "Pâtis Roussel - 77", "PLacis de la Touche - 65", "Haute Rabine - 65", "Décoparc - Metrie - 168ex"],
     letter: "E2",
     message: "On les trouve notamment rue de la Psalette et rue du Chapitre."
+    image: "images/psalette.jpg" 
   },
 
   {
@@ -69,6 +71,7 @@ const enigmes = [
     stops: ["Bécherel Centre - 82", "Mettrie Templiers - 82", "Chapelle-Chaussée - 82"],
     letter: "V",
     message: "Il voulait en faire le pendant de St Pierre de Rome. Pas si mal réussi !"
+    image: "images/cathedrale.jpg" 
   },
 
   {
@@ -78,15 +81,17 @@ const enigmes = [
     stops: ["Pôle Sud - 91", "Rivaudière - 79", "Château d'eau - 80", "Surcouf - 74", "Monts Gaultier - 91", "Pôle Sud - 91"],
     letter: "O",
     message: "Il ravagea 40% de la ville..."
+    image: "images/incendie.jpg" 
   },
 
   {
     id: 9,
     question: "De quel commerce est parti l'incendie de 1720 ?",
-    answers: ["menuisier", "menuiserie"],
+    answers: ["menuisierie", "menuisier"],
     stops: ["Molière - 61", "Perelle - 74"],
     letter: "I",
     message: "Ivre, le menuisier se serait disputé avec sa femme et aurait fait tomber une bougie sur un tas de copeaux."
+    image: "images/incendie.jpg" 
   },
 
   {
@@ -96,6 +101,7 @@ const enigmes = [
     stops: ["Merlin - 53","Tertre - 53", "Les Pins - 54", "Berthault - 54", "Les Pins - 54", "Pont d'Avoine - 56"],
     letter: "E3",
     message: "Plus exactement, 2500 roses de 900 variétés différentes."
+    image: "images/thabor.jpg" 
   },
 
   {
@@ -105,6 +111,7 @@ const enigmes = [
     stops: ["Gingouillère - 79", "Lande du Pont - C7", "Mare de la Salle - 91", "Croix aux Potiers - 72", "Point du Jour - 79"],
     letter: "M",
     message: "Il a été racheté par la Ville de Rennes. Après avoir servi d'HLM durant quelques années, il a été rasé pour construire le lycée actuel."
+    image: "images/brequigny.jpg" 
   },
 
   {
@@ -114,6 +121,7 @@ const enigmes = [
     stops: ["Fréville - a", "République - a", "Robidou - 67", "Jacques Cartier - a", "Triangle - a"],
     letter: "R",
     message: "Il en retse bien peu de communautés... Mais bon nombre de bâtiments sont toujours présents."
+    image: "images/couvents.jpg" 
   },
 
   {

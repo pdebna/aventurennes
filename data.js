@@ -156,8 +156,8 @@
 
   {
     id: 16,
-    question: "Quel bâtiment occupait le 33 quater rue d'Antrain, jusqu'en 1955 ?",
-    answers: ["Un couvent d'Ursulines", "couvent", "couvent d'ursulines", "un couvent", "une chapelle", "chapelle de couvent"],
+    question: "Quel bâtiment occupait le 33 rue d'Antrain, jusqu'en 1955 ?",
+    answers: ["Un couvent d'Ursulines", "couvent", "couvent d'ursulines", "un couvent", "une chapelle", "chapelle", "chapelle de couvent"],
     stops: ["Le Verger Eglise - 55", "Vivier des Bois - 55", "Mordelles Lilas - 76", "Avenir - 56"],
     letter: "T2",
     message: "Il a ensuite fait place à notre bien aimé immeuble.",

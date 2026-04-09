@@ -1,4 +1,4 @@
-const enigmes = [
+ const enigmes = [
 
   {
     id: 1,
@@ -126,38 +126,42 @@ const enigmes = [
 
   {
     id: 13,
-    question: "QUESTION 13",
-    answers: ["reponse 13"],
-    stops: ["ARRET K1", "ARRET L1", "ARRET M1"],
-    letter: "M",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "En quelle année fut aménagé le Mail ?",
+    answers: ["1677"],
+    stops: ["Ville aux Archers - 53", "Hautière - 53", "Piardière - 53", "Saint Melaine - 54"],
+    letter: "T1",
+    message: "C'était à l'époque un lieu de promenade pour la haute société rennaise.",
+    image: "images/mail.jpg" 
   },
 
   {
     id: 14,
-    question: "QUESTION 14",
-    answers: ["reponse 14"],
-    stops: ["ARRET N1", "ARRET O1", "ARRET P1"],
-    letter: "O",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "En quelle année fut achevé le Palais du Commerce, place de la République ?",
+    answers: ["1929"],
+    stops: ["Ker Lann - C7", "Gheroui - 55", "Cicé-Blossac - 91", "Gavrinis - C7", "Cicé-Blossac - 91", "Rabine - 91", "Noë - C7"],
+    letter: "E4",
+    message: "Il n'a pas 100 ans ! On a pourtant bien changé de style architectural depuis...",
+    image: "images/commerce.jpg" 
   },
 
   {
     id: 15,
-    question: "QUESTION 15",
-    answers: ["reponse 15"],
-    stops: ["ARRET Q1", "ARRET R1", "ARRET S1"],
-    letter: "I",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "En quelle année a été fondée l'Ecole d'Architecture de Rennes ?",
+    answers: ["1905"],
+    stops: ["Hermitage Gare - 53", "Clos Joury - 54", "Bouleaux - 54", "Noë Biche - 53"],
+    letter: "U2",
+    message: "Elle s'appelait à l'époque Ecole Régionale d'Architecture de Bretagne.",
+    image: "images/ensab.jpg" 
   },
 
   {
     id: 16,
-    question: "QUESTION 16",
-    answers: ["reponse 16"],
-    stops: ["ARRET T1", "ARRET U1", "ARRET V1"],
-    letter: "N",
-    message: "Eh bien, ça en fait des colonnes !"
+    question: "Quel bâtiment occupait le 33 quater rue d'Antrain, jusqu'en 1955 ?",
+    answers: ["Un couvent d'Ursulines", "couvent", "couvent d'ursulines", "un couvent", "une chapelle", "chapelle de couvent"],
+    stops: ["Le Verger Eglise - 55", "Vivier des Bois - 55", "Mordelles Lilas - 76", "Avenir - 56"],
+    letter: "T2",
+    message: "Il a ensuite fait place à notre bien aimé immeuble.",
+    image: "images/antrain.jpg" 
   }
 
 ];

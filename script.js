@@ -212,7 +212,7 @@ if (valid) {
   } else {
 
     document.getElementById("feedback").innerText =
-      "Pas encore… regarde bien 👀";
+      "Pas encore… cherche bien 👀";
 
   }
 

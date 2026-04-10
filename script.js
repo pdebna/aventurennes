@@ -268,14 +268,11 @@ function checkFinish() {
 
     let phrase = "";
 
-    enigmes.forEach(e => {
-      phrase += e.letter;
-    });
 
     document.getElementById("result").innerText =
       phrase;
 
-    alert("🎉 Bravo ! Vous avez tracé la route vers le futur !");
+ alert("🎉 Bravo ! Vous avez tracé la route vers le futur !");
   }
 
 }

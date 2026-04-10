@@ -25,7 +25,7 @@
   {
     id: 3,
     question: "Quelle oeuvre de Georges de La Tour est conservée au Musée des Beaux-Arts de Rennes ?",
-    answers: ["Le Nouveau-Né", "le nouveau né"],
+    answers: ["Le Nouveau-Né", "le nouveau né", "nouveau né"],
     intro: "Poursuivons notre route :",
     stops: ["Institu Agro - 53", "Pont de Bretagne - 53", "Chèques Postaux - 53", "Maltière - C7"],
     letter: "T3",

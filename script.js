@@ -275,7 +275,7 @@ function checkFinish() {
     document.getElementById("result").innerText =
       phrase;
 
-    alert("🎉 Bravo ! Vous avez terminé toutes les énigmes !");
+    alert("🎉 Bravo ! Vous avez tracé la route vers le futur !");
   }
 
 }

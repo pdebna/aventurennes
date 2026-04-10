@@ -87,7 +87,7 @@
   {
     id: 9,
     question: "De quel commerce est parti l'incendie de 1720 ?",
-    answers: ["menuisierie", "menuisier"],
+    answers: ["Une menuisierie", "menuiserie", "menuisier"],
     stops: ["Molière - 61", "Perelle - 74"],
     letter: "I",
     message: "Ivre, le menuisier se serait disputé avec sa femme et aurait fait tomber une bougie sur un tas de copeaux.",

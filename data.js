@@ -15,7 +15,7 @@
     id: 2,
     question: "Quel journal avait son siège au 38 rue du Pré Botté, dans un hôtel construit en 1912 ?",
     answers: ["Ouest-France", "Ouest France"],
-    intro: "Poursuivons notre route :",
+    intro: "Poursuivons notre route ! Comme l'énigme précédente, tracez la route par les arrêts suivants :",
     stops: ["Champs-Péans - 67", "Moulin de Joué - 67", "En suivant la voie ferrée, gagnez Rond-Point de Bray - 67 ; puis rebroussez chemin", "Le Blosne - a", "Bois de Soeuvres - 73"],
     letter: "E1",
     message: "L’hôtel particulier de 1912, de style Louis-XVI, fut remanié après la guerre avec un auvent Art nouveau très distinctif.",
